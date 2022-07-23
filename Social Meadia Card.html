@@ -1,0 +1,233 @@
+<!-- Created by Pradip Jadav-->
+
+<!-- 
+    code : portfolio
+    created by : Pradip Jadav
+    Date:26-07-2020
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">    
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+        <style type="text/css">
+            body
+            {
+                margin :0;
+                padding :0;
+                scroll-behaviour:smooth;
+                background-color: #131414;
+            }
+        #home
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 550px;
+            background-color: #131414;
+        }
+        .profile-card
+        {
+            height: 500px;
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            border-radius: 20px;
+            background: #131414;
+            box-shadow: inset 5px 5px 14px #0c0c0c, 
+                        inset -5px -5px 14px #1a1c1c;
+        }
+        .profile
+        {
+            margin-top:40px;
+            width: 130px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: #131414;
+            box-shadow: inset 17px 17px 35px #0c0c0c, 
+                        inset -17px -17px 35px #1a1c1c;
+        }
+        .profile img
+        {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: #131414;
+            box-shadow: inset 17px 17px 35px #0c0c0c, 
+            inset -17px -17px 35px #1a1c1c;
+        }
+        .profile-card h3
+        {
+            font-size: 16px;
+            color: #ffffff;
+            font-family:verdana;
+            text-transform: uppercase;
+        }
+        .profile-card p
+        {
+            margin-top: -10px;
+            font-size: 15px;
+            font-family:arial;
+            color: #ffffff;
+            font-weight: normal;
+        }
+        .profile-card .follow
+        {
+            color:#cdcdcd;
+            width: 100px;
+            border: 0px;
+            text-decoration:none;
+            text-align:center;
+            border-radius: 5px;
+            font-family:arial;
+            font-weight: normal;
+            text-transform: capitalize;
+            padding: 10px 30px 10px 30px;
+            background: #131414;
+            box-shadow: inset 10px 10px 20px #080808, 
+                        inset -10px -10px 20px #1e2020;
+        }
+        .profile-card button:hover
+        {
+            background-color:white;
+            border: 2px solid #000000;
+            font-weight: bolder;
+        }
+        .profile-card ul
+        {
+            list-style-type: none;
+            display: inline-flex; 
+        }
+        .profile-card li
+        {
+            text-align: center;
+            margin:0px 20px 0px 0px;
+        }
+        .fa-instagram,.fa-facebook,.fa-free-code-camp,.fa-telegram,.fa-envelope
+        {      
+            color: white;
+            padding: 10px;
+            width: 30px;
+            height:30px;
+            border-radius: 50%;
+            border-radius: 50px;
+            background: #131414;
+            box-shadow: inset 10px 10px 20px #080808, 
+            inset -10px -10px 20px #1e2020;
+        }
+        .profile-card button:hover,.fa-instagram:hover,.fa-facebook:hover,.fa-free-code-camp:hover, .fa-telegram:hover, .fa-envelope:hover
+        {
+            background-color:white; /*#000000;*/
+        }
+        .fa-free-code-camp
+        {
+            text-align:center;
+            width:35px;
+        }
+       
+        #p-loader 
+        {
+            position: absolute;
+            top: 30%;
+            left: 45%;
+            right: 50%;
+            transform: translate(-50%,-50%);
+            margin:10px;
+            border: 13px solid #131414;
+            border-radius: 50%;
+            border-top: 13px solid  white;
+            width: 100px;
+            height: 100px;
+            color: white;
+            -webkit-animation: rp 2s linear
+            infinite;
+            animation: rp 2s linear infinite;
+            box-shadow: inset 10px 10px 20px #080808, 
+                        inset -10px -10px 20px #1e2020;
+        }
+        @-webkit-keyframes rp 
+        {
+            0% {-webkit-transform: rotate(0deg);}
+            100% { -webkit-transform:
+            rotate(360deg); }
+        }
+        @keyframes rp 
+        {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        </style>
+        
+        <script type="text/javascript">       
+        function start()
+        {
+            myVar = setTimeout(displayp, 500);
+        }
+        function displayp() 
+        {
+            alert("welcome to my portfolio...😇😇");
+            document.getElementById("p-loader").style.display = "none";
+            document.getElementById("portfolio").style.display = "block";
+            AOS.init({
+            duration: 1000
+            })
+        }
+        </script>
+        <title>Pradip Jadav</title>
+    </head>
+    <body onload="start()">
+        <div id="portfolio">
+            <div id="home" >
+                <div class="profile-card"  data-aos="zoom-out">
+                    <div class="profile" >
+                         <img src="./img/Pradip2.jpeg">
+                    </div>
+                    <h3>Pradip Jadav</h3>
+                    <p>Gujarat, India</p>
+                    <a href="https://www.linkedin.com/in/jadav-pradip-197251194?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYoNZJRdaTo%2BjH5JDaCpBRg%3D%3D" class="follow" style="font-size:25px">Linked<i class="fa fa-linkedin-square"></i></a>
+                    <ul class="profile-social-links">
+                        <li>
+                            <a href="https://twitter.com/JadavPradipG">
+                            <i class="fa fa-free-code-camp" style="font-size:25px;"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/jadav.p.g.3/">
+                            <i class="fa fa-facebook" style="font-size:30px;color: white;"></i>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="mailto:jadavpradip2002@gmail.com">
+                        	<i class="fa fa-envelope" style="font-size:30px;"></i>
+                        	</a>
+                            
+                        </li>
+                        
+                    </ul>
+                    <ul class="profile-social-links">
+                    	<li>
+                    		<a href="https://www.instagram.com/mr.pradip_05/">
+                            <i class="fa fa-instagram" style="font-size:30px;"></i>
+                            </a>
+                            
+                        </li>
+                        <li>
+                        	<a href="https://t.me/pradip_05">
+                            <i class="fa fa-telegram" style="font-size:30px;"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+        </div>
+        <div id="p-loader"></div>
+    </body>
+</html>
